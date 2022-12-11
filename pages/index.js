@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>GPT-3 Writer</title>
       </Head>
       <div className="container">
         <div className="header">
@@ -17,6 +17,9 @@ const Home = () => {
             <h2>insert your subtitle here</h2>
           </div>
         </div>
+        <div className="prompt-container">
+          <textarea placeholder="start typing here" className="prompt-box" />
+        </div>
       </div>
       <div className="badge-container grow">
         <a
@@ -24,9 +27,10 @@ const Home = () => {
           target="_blank"
           rel="noreferrer"
         >
+          
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            {/*<Image src={buildspaceLogo} alt="buildspace logo" />*/}
+            <p></p>
           </div>
         </a>
       </div>
